@@ -1,8 +1,10 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/500.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/600.min.css">
-
+<link rel="icon" href="ogtoollogo.ico" type="image/x-icon">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body,div,span,p{font-family:'Inter',system-ui,sans-serif;}
@@ -109,14 +111,14 @@ body,div,span,p{font-family:'Inter',system-ui,sans-serif;}
 .kw-up{background:#f0fdf4;color:#16a34a;}
 .kw-same{background:#f4f4f5;color:#a1a1aa;}
 </style>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+<body>
 <div class="app">
   <div class="sb">
     <div class="sb-brand">
       <div class="sb-brand-row">
-        <div class="sb-icon">
-          <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="8" width="3" height="7" rx="1" fill="white" opacity="0.6"/><rect x="6" y="5" width="3" height="10" rx="1" fill="white" opacity="0.8"/><rect x="11" y="1" width="3" height="14" rx="1" fill="white"/></svg>
-        </div>
+<img src="ogtoollogo.ico" style="width:30px;height:30px;border-radius:7px;object-fit:contain;">
         <div>
           <div class="sb-brand-name">OGTool</div>
           <div class="sb-brand-sub">Analytics</div>
@@ -418,8 +420,6 @@ body,div,span,p{font-family:'Inter',system-ui,sans-serif;}
     </div>
   </div>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 const titles = {overview:'Overview',campaigns:'Campaigns',sentiment:'Sentiment',keywords:'Keywords'};
 document.querySelectorAll('.nav-item').forEach(item => {
@@ -484,3 +484,5 @@ new Chart(document.getElementById('c-trend'),{
   }}
 });
 </script>
+</body>
+</html>
